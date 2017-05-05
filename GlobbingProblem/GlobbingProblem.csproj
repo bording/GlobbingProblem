@@ -4,4 +4,8 @@
     <TargetFramework>net452</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="NServiceBus.AcceptanceTests.Sources" Version="6.3.0-alpha0113" />
+  </ItemGroup>
+
 </Project>
