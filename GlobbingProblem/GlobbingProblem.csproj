@@ -8,4 +8,12 @@
     <PackageReference Include="NServiceBus.AcceptanceTests.Sources" Version="6.3.0-alpha0113" />
   </ItemGroup>
 
+  <!-- Uncomment the section below to see the problem. It correctly removes the
+       5 files in the Audit folder, but ConfigureEndpointLearningTransport.cs is also removed
+       even though it doesn't match the pattern. -->
+
+  <!--<ItemGroup>
+    <Compile Remove="$(NuGetPackageRoot)**\Audit\*.cs" />
+  </ItemGroup>-->
+
 </Project>
